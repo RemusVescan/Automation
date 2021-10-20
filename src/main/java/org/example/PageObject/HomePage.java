@@ -98,5 +98,76 @@ public class HomePage {
 
 
 
+    @FindBy(id = "pass")
+    private WebElement passField;
+    public WebElement getPassField() {
+        return passField;
+    }
+
+
+
+    @FindBy(id = "send2")
+    private WebElement loginButton;
+    public WebElement getLoginButton() {
+        return loginButton;
+    }
+
+
+
+    @FindBy(xpath = "//p[@class='welcome-msg' and text()='Welcome, Remus Vescan!']")
+    private WebElement messageWelcome;
+    public WebElement getMessageWelcome() {
+        return messageWelcome;
+    }
+
+
+
+    @FindBy(xpath = "//a[text()='Men']")
+    private WebElement menLink;
+    public WebElement getMenLink() {
+        return menLink;
+    }
+
+
+
+    @FindBy(id = "product-collection-image-1122")
+    private WebElement basicIndoor;
+    public WebElement getBasicIndoor() {
+        return basicIndoor;
+    }
+
+
+
+    @FindBy(css= "div.add-to-cart-buttons")
+    private WebElement addToCart;
+    public WebElement getAddToCart() {
+        return addToCart;
+    }
+
+
+
+    @FindBy(xpath = "//ul[@class='checkout-types bottom']")
+    private WebElement proceedToCheckout;
+    public WebElement getProceedToCheckout() {
+        return proceedToCheckout;
+    }
+
+
+
+    @FindBy(id = "billing:street1")
+    private WebElement address;
+    public WebElement getAddress() {
+        return address;
+    }
+
+
+
+    @FindBy(id = "billing:city")
+    private WebElement city;
+    public WebElement getCity() {
+        return city;
+    }
+
+
 
 }

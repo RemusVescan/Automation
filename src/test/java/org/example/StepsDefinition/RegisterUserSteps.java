@@ -72,4 +72,53 @@ public class RegisterUserSteps extends TestBase {
     public void iTypeInTheEmailAddressAccount() {
         homePage.getEmailField().sendKeys("remus.vescan@freshbyteinc.com");
     }
+
+    @And("I type in the Password account")
+    public void iTypeInThePasswordAccount() {
+        homePage.getPassField().sendKeys("Persida1");
+    }
+
+    @And("I click on the Login button")
+    public void iClickOnTheLoginButton() {
+        homePage.getLoginButton().click();
+    }
+
+    @Then("I should see Welcome, Remus Vescan!")
+    public void iShouldSeeWelcomeRemusVescan() {
+        boolean elementExists = !driver.findElements(By.xpath("//p[@class='welcome-msg']")).isEmpty();
+        assertThat("You are not registered.", elementExists);
+
+    }
+
+    @And("I click on the Men link")
+    public void iClickOnTheMenLink() {
+        homePage.getMenLink().click();
+
+    }
+
+    @And("I click on the Basic-Indoor")
+    public void iClickOnTheBasicIndoor() {
+        homePage.getBasicIndoor().click();
+    }
+
+    @And("I click on the Add To Cart")
+    public void iClickOnTheAddToCart() {
+        homePage.getAddToCart().click();
+    }
+
+    @And("I click on the Proceed to checkout")
+    public void iClickOnTheProceedToCheckout() throws InterruptedException {
+        homePage.getProceedToCheckout().click();
+        Thread.sleep(1000);
+    }
+
+    @And("I type in the Address field")
+    public void iTypeInTheAddressField() {
+        homePage.getAddress().sendKeys("Colonia Breaza nr.6");
+    }
+
+    @And("I type in the City field")
+    public void iTypeInTheCityField() {
+        homePage.getCity().sendKeys("Cluj-Napoca");
+    }
 }
