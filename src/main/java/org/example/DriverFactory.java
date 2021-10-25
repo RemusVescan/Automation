@@ -39,17 +39,17 @@ public class DriverFactory {
                 break;
         }
 
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        DriverFactory.driver = driver;
-        Dimension dimension = new Dimension(1920, 1080);
-        driver.manage().window().setSize(dimension);
-        return driver;
-    }
+               driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+               driver.manage().window().maximize();
+               DriverFactory.driver = driver;
+               Dimension dimension = new Dimension(1400, 1050);
+               driver.manage().window().setSize(dimension);
+               return driver;
+         }
 
 
-    public static WebDriver getDriver() {
-        return driver;
+        public static WebDriver getDriver () {
+            return driver;
+        }
     }
-}
 
