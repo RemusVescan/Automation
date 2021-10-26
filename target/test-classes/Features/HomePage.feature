@@ -120,7 +120,9 @@ Feature: HomePage
   Scenario: Checkout for Sale
     Given I open the homepage
     And I click on the Sale link
-    And I click on the Kitchen Pasta
+    And I click on the Skinny Jean
+    And I select the color black
+    And I select the size of the Skinny Jean
     And I click on the Add To Cart
     And I click on the Proceed to checkout
     And I click on the Continue as a guest

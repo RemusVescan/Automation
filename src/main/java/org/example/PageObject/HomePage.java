@@ -493,4 +493,28 @@ public class HomePage {
     }
 
 
+    @FindBy(id = "product-collection-image-426")
+    public WebElement skinnyJean;
+    public WebElement getSkinnyJean() {
+        return skinnyJean;
+    }
+
+
+
+    @FindBy(id = "option68")
+    public WebElement sizeJean;
+    public WebElement getSizeJean() {
+        return sizeJean;
+    }
+
+
+
+    @FindBy(id = "option20")
+    public WebElement colorJean;
+    public WebElement getColorJean() {
+        return colorJean;
+    }
+
+
+
 }

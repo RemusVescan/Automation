@@ -366,4 +366,20 @@ public class RegisterUserSteps extends TestBase {
     public void iClickOnTheRose() {
         homePage.getRose().click();
     }
+
+    @And("I click on the Skinny Jean")
+    public void iClickOnTheSkinnyJean() {
+        homePage.getSkinnyJean().click();
+    }
+
+    @And("I select the size of the Skinny Jean")
+    public void iSelectTheSizeOfTheSkinnyJean() {
+        homePage.getSizeJean().click();
+
+    }
+
+    @And("I select the color black")
+    public void iSelectTheColorBlack() {
+        homePage.getColorJean().click();
+    }
 }
